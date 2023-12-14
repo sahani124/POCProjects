@@ -1,0 +1,28 @@
+
+<table style="background-color:lightblue" bordercolor="blue">
+    <tr  halign="left">
+        <td colspan="2" halign="left">
+            <br>
+        </td>
+    </tr>
+    <tr bordercolor="red">
+        <td  valign="top">
+            <a [routerLink]="['Login/Add']">Login</a><br>
+            <a [routerLink]="['Home']">Home</a><br>
+            <a [routerLink]="['Customer/Add']">Customer</a><br>
+            <a [routerLink]="['Supplier/Add']">Supplier</a><br>
+        </td>
+        <td>
+                <div>
+                        <router-outlet></router-outlet>
+                        </div>
+        </td>
+    </tr>
+    <tr bordercolor="red"><td colspan="2"></td></tr>
+    <tr halign="center">
+        <td colspan="2"></td>
+    </tr>
+</table>
+
+
+

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../Assets/JavaScript/bootstrap.min.js"></script>
+    <link href="../Assets/Css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../Assets/JavaScript/jquery.min.js"></script>
+</head>
+<script type="text/javascript">
+    $(document).ready(function () {
+        search();
+    });
+
+    function search() {
+        $.ajax({
+            type: "POST",
+            url: "WebService1.asmx/HelloWorld",
+            data: "{'myUserName':'sanoj sahni'}",
+            contentType: "application/json",
+            datatype: "json",
+            success: function (responseFromServer) {
+                alert(responseFromServer.d)
+            }
+        });
+    }
+    </script>
+    <body>
+    
+
+
+
+    </body>
+    </html>

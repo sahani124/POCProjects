@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="first_page.css">
+    </head>
+<body>
+  <!--Developed By Sarthak Thikekar-->
+  <div class="Header">
+    <!-- <img src="images/RNLICLogo.jpg" class="img"> -->
+  </div><br>
+  <!--DropDowns-->
+  <div class="allcode">
+<div class="divedit">
+<table style="width:100%">
+  <tr>
+    <td>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" id="dropdownbtn" type="button" data-toggle="dropdown">--Select Channel--
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul><hr>
+      </div></td>
+    <td>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" id="dropdownbtn" type="button" data-toggle="dropdown">--Select Zone--&nbsp;&nbsp;&nbsp;
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul><hr>
+      </div></td>
+    <td>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" id="dropdownbtn" type="button" data-toggle="dropdown">--Select Region--
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul><hr>
+      </div></td>
+    <td><div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" id="dropdownbtn" type="button" data-toggle="dropdown">--Select SU--
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul><hr>
+      </div>
+    </td> 
+    <td><button class="btn btn-primary" Style="margin-bottom:5px;"> Search</button></td>
+  </tr>
+  </table>
+</div>
+    <!--Basic Target Achievement-->
+  <div class="divedit">
+    <h2 style="padding:15px;">Basic Target Achivement<p id="cdate"></p></h2>
+    <script>
+      document.getElementById("cdate").innerHTML=getDate()+"/"+getMonth()+"/"+getFullYear();
+    </script>
+  <div> 
+    <table style="width:100%">
+        <tr>
+          <td style="text-align:left">Total Active FLS & CDA<hr></td>
+          <td style="text-align:left">Total Active Branch<hr></td>
+          <td style="text-align:left">Total Active Region<hr></td>
+        </tr>
+        <tr>
+          <td style="text-align:left"> <input type="text" id="acflscda" maxlength="20" size="25"><br><br></td>
+          <td style="text-align:left"> <input type="text" id="actb" maxlength="20" size="25"><br><br></td>
+          <td style="text-align:left"> <input type="text" id="actr" maxlength="20" size="25"><br><br></td>
+        </tr>      
+    </table>
+  </div>
+  </div> <br>
+  <!--Zone-->
+  <div class="divedit">
+    <button class="collapsible1" style="background-color: #034ea2; color:white">
+      <table style="width:100%;">
+        <tr>
+          <th>Zone</th>
+          <th>Zone Club target</th>
+          <th>Zone Rank</th>
+          <th>Qualification Status</th>
+          <th>Current 13M%</th>
+          <th>Date % vs Apr'22</th>
+        </tr>
+      </table>
+    </button>
+    <div class="content">
+      <table style="width:100%;">
+        <tr>
+          <td>North1</td>
+          <td>90%</td>
+          <td>6</td>
+          <td>Net Qualified/Qualified Club 85 / Club 90</td>
+          <td>88%</td>
+          <td>10%</td>
+        </tr>
+      </table>
+    </div>
+    <script>
+var coll = document.getElementsByClassName("collapsible1");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+  </div><br>
+  <!--13M performance VS LY chart-->
+  <div  class="divedit">
+    <button class="collapsible2" style="color:none">
+    <h3> 13M Performance Chart VS LY MOM </h3>
+    </button>
+    <div class="content">
+      <table style="width:100%;">
+        <tr style="background-color: #034ea2; color:white">
+          <th>13M Performance chart <br> VS LY MOM</th>
+          <th>Apr</th>
+          <th>May</th>
+          <th>Jun</th>
+          <th>Jul</th>
+          <th>Aug</th>
+          <th>Sep</th>
+          <th>Oct</th>
+          <th>Nov</th>
+          <th>Dec</th>
+          <th>Jan</th>
+          <th>Feb</th>
+          <th>Mar</th>
+        </tr>
+        <tr>
+          <td style="text-align:left">Current Year</td>
+          <td>77.02%</td>
+          <td>76.00%</td>
+          <td>76.67%</td>
+          <td>74.74%</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">Last Year</td>
+          <td>75.58%</td>
+          <td>75.27%</td>
+          <td>75.55%</td>
+          <td>73.00%</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">Diff vs LY</td>
+          <td>1.44%</td>
+          <td>0.73%</td>
+          <td>1.12%</td>
+          <td>1.74%</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div><script>
+var coll = document.getElementsByClassName("collapsible2");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+  </div><br>
+  <!--FLS Club Qualifier And Hall of fame-->
+<div class="divedit">
+  <button class="collapsible3">
+  <h3>FLS-Club Qualifier & Hall of Fame</h3>
+  </button>
+  <div class="content">
+    <table style="width:100%;">
+      <tr style="background-color: #034ea2; color:white">
+        <th>Active Employee-FLS</th>
+        <th>4284</th>
+        <th>% Qualifiers</th>
+        <th>Group Persistency % Apr</th>
+        <th>Group Persistency % Current</th>
+        <th>Delta +/-</th>        
+      </tr>
+      <tr>
+        <td style="text-align:left">Hall of Fame Probables</td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td>         
+      </tr>
+      <tr>
+        <td style="text-align:left">Qualifier on Club 90</td>
+        <td>998</td>
+        <td>23%</td>
+        <td>89%</td>
+        <td>95%</td>
+        <td>6.19%</td>
+      </tr>
+      <tr>
+        <td style="text-align:left">Qualifier on Club 85</td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td>
+      </tr>
+      <tr>
+        <td style="text-align:left">Achievers Club</td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td>
+      </tr>
+      <tr>
+        <td style="text-align:left">Not Qualified</td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td>
+      </tr>
+    </table>
+    <!--sub table-->
+    <table style="width:100%;">
+      <tr style="background-color: lightskyblue;">
+        <th>Good Behaviour- Hall of fame</th>
+        <th>Total Count#</th>
+        <th>Hall of Fame Qualifier</th>
+        <th>% Qualifiers</th>
+        <th>Group persistency % Apr</th>
+        <th>Group persistency % Current</th>
+        <th>Delta +/-</th>
+      </tr>
+      <tr>
+        <td style="text-align:left">Assigned Customer>30%<br>Dues(13M>90%)</td> 
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td>
+        <td>4.42%</td>      
+      </tr>
+      <tr>
+        <td style="text-align:left">Highest NOP Inforce<br>Dues(13M>90%)</td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td>
+        <td>4.42%</td> 
+      </tr>
+      <tr>
+        <td style="text-align:left">Month on Month >90%</td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td>
+        <td>4.42%</td> 
+      </tr>
+    </table>
+  <script>
+var coll = document.getElementsByClassName("collapsible3");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var content = this.nextElementSibling;
+  if (content.style.maxHeight){
+    content.style.maxHeight = null;
+  } else {
+    content.style.maxHeight = content.scrollHeight + "px";
+  } 
+});
+}
+</script>
+</div>
+</div><br>
+<!--Branch Manager- Club Qualifier & Hallof Fame-->
+<div class="divedit">
+  <button class="collapsible4">
+  <h3>Branch Manager- Club Qualifier & Hall of Fame</h3>
+  </button>
+  <div class="content">
+    <table style="width:100%;">
+      <tr style="background-color: #034ea2; color:white">
+          <th>Club Qualifier</th>
+          <th>906</th>
+          <th>% Qualifiers</th>
+          <th>Group Persistency % Apr</th>
+          <th>Group Persistency % Current</th>
+          <th>Delta +/-</th>               
+      </tr>
+      <tr>
+        <td style="text-align:left">Hall of Fame Probables</td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td> 
+      </tr>
+      <tr>
+        <td style="text-align:left">Qualifier on Club 90</td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td> 
+      </tr>
+      <tr>
+        <td style="text-align:left">Qualifier on Club 85</td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td> 
+      </tr>
+      <tr>
+        <td style="text-align:left">Achievers Club</td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td> 
+      </tr>
+      <tr>
+        <td style="text-align:left">Not Qualified</td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td> 
+      </tr>
+    </table>
+    <!--Sub Table 1-->
+    <table style="width:100%;">
+      <tr style="background-color: lightskyblue;">
+        <th>Good Behaviour- Hall of fame</th>
+        <th>Total Count#</th>
+        <th>Qualifiers</th>
+        <th>% Qualifiers</th>
+        <th>Group persistency % Apr</th>
+        <th>Group persistency % Current</th>
+        <th>Delta +/-</th>
+      </tr>
+      <tr>
+        <td style="text-align:left">Hall of Fame BM Month<br>on Month>90%</td>  
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td>
+        <td>4.42%</td>      
+      </tr>
+      <tr>
+        <td style="text-align:left">Highest NOP Inforce<br(13M>90%)</td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td>
+        <td>4.42%</td> 
+      </tr>
+      <tr>
+        <td style="text-align:left">Hall of Fame BM Qualifier<br>Never Crossed 80% in 3 Year</td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td>
+        <td>4.42%</td> 
+      </tr>
+    </table>
+    <!--Sub Table 2-->
+    <table style="width:100%;">
+      <tr style="background-color: lightskyblue;">
+        <th>Superviser Achievers Club-BM</th>
+        <th>814</th>
+        <th>Qualifiers</th>
+        <th>% Qualifiers</th>
+        <th>Group persistency % Apr</th>
+        <th>Group persistency % Current</th>
+        <th>Delta +/-</th>
+      </tr>
+      <tr>
+        <td style="text-align:left">Branch with >65%<br>FLS Qualifier</td>   
+        <td></td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td>    
+      </tr>
+      <tr>
+        <td style="text-align:left">Branch with >80%<br>FLS Qualifier</td>
+        <td></td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td>
+      </tr>
+      <tr>
+        <td style="text-align:left">Not Qualified</td>
+        <td></td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td>
+      </tr>
+    </table>
+  <script>
+var coll = document.getElementsByClassName("collapsible4");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var content = this.nextElementSibling;
+  if (content.style.maxHeight){
+    content.style.maxHeight = null;
+  } else {
+    content.style.maxHeight = content.scrollHeight + "px";
+  } 
+});
+}
+</script>
+</div>
+</div><br>
+<!--RM - Club Qualifier-->
+<div class="divedit">
+  <button class="collapsible5">
+  <h3>Regional Manager - Club Qualifier & Hall of Fame</h3>
+  </button>
+  <div class="content">
+    <table style="width:100%;">
+      <tr style="background-color: #034ea2; color:white">
+        <th>Club Qualifier</th>
+        <th>193</th>
+        <th>% Qualifiers</th>
+        <th>Group Persistency % Apr</th>
+        <th>Group Persistency % Current</th>
+        <th>Delta +/-</th>       
+      </tr>
+      <tr>
+        <td style="text-align:left">Hall of Fame Probables</td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td>
+      </tr>
+      <tr>
+        <td style="text-align:left">Qualifier on Club 90</td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td>
+      </tr>
+      <tr>
+        <td style="text-align:left">Qualifier on Club 85</td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td>
+      </tr>
+      <tr>
+        <td style="text-align:left">Achievers Club</td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td>
+      </tr>
+      <tr>
+        <td style="text-align:left">Not Qualified</td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td>
+      </tr>
+    </table>
+    <!--sub table-->
+    <table style="width:100%;">
+      <tr style="background-color:deepskyblue;">
+        <th>Good Behaviour- Hall of fame</th>
+        <th>Count#</th>
+        <th>Qualifiers</th>
+        <th>% Qualifiers</th>
+        <th>Group persistency % Apr</th>
+        <th>Group persistency % Current</th>
+        <th>Delta +/-</th>
+      </tr>
+      <tr>
+        <td style="text-align:left">RM Month on Month>85%%</td>  
+        <td>1</td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td>     
+      </tr>
+      <tr>
+        <td style="text-align:left">RM Qualifier Never Crossed<br>80% in 3 Year</td>
+        <td>1</td>
+        <td>37</td>
+        <td>1%</td>
+        <td>96%</td>
+        <td>99%</td>
+        <td>2.72%</td>
+      </tr>
+    </table>
+  <script>
+var coll = document.getElementsByClassName("collapsible5");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var content = this.nextElementSibling;
+  if (content.style.maxHeight){
+    content.style.maxHeight = null;
+  } else {
+    content.style.maxHeight = content.scrollHeight + "px";
+  } 
+});
+}
+</script>
+</div>
+</div>
+  </div>
+</body>
+</html>

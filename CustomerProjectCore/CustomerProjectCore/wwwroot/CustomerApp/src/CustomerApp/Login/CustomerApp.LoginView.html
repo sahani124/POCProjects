@@ -1,0 +1,7 @@
+<form >
+User Id :<input  [(ngModel)]="UserModel.UserId"  [ngModelOptions]="{standalone: true}" type=text/><br>
+User Password :<input [(ngModel)]="UserModel.UserPIN" [ngModelOptions]="{standalone: true}" type=text/>
+<input  (click)="PosttoServer()"  type=button value="Add"/>
+<input  (click)="GetFromServer()"  type=button value="Add"/>
+
+</form>

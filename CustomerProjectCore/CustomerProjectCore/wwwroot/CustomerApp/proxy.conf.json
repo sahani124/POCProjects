@@ -1,0 +1,10 @@
+
+{
+  "/api/*": {
+    "target": "http://localhost:80/MISDashBoard/",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}
+

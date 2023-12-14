@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		How to take screenshot of
+		a div using JavaScript?
+	</title>
+
+	<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+
+	<style>
+		#photo {
+			border: 4px solid green;
+			padding: 4px;
+		}
+        table, th, td {
+            border: 1px solid black;
+        }
+       
+	</style>
+</head>
+
+<body>
+	<div id="photo">
+		
+		<button onclick="takeshot()">
+			Take Screenshot
+		</button>
+		<button onclick="capture()">
+			download
+		</button>
+	</div>
+	<h1>Screenshot:</h1>
+	<div id="output"></div>
+	<div id="outpu1233">
+		<h1>GeeksforGeeks</h1>
+		Hello everyone! This is a
+		trial page for taking a
+		screenshot.
+	
+		
+		<table style="width:100%">
+			<tr>
+				<th>Company</th>
+				<th>Contact</th>
+				<th>Country</th>
+				<th>Company</th>
+				<th>Contact</th>
+				<th>Country</th>
+
+			</tr>
+			<tr>
+				<td>Alfreds Futterkiste</td>
+				<td>Maria Anders</td>
+				<td>Germany</td>
+				<td>Alfreds Futterkiste</td>
+				<td>Maria Anders</td>
+				<td>Germany</td>
+			</tr>
+			<tr>
+				<td>Centro comercial Moctezuma</td>
+				<td>Francisco Chang</td>
+				<td>Mexico</td>
+				<td>Centro comercial Moctezuma</td>
+				<td>Francisco Chang</td>
+				<td>Mexico</td>
+			</tr>
+
+		</table>
+	</div>
+
+</body>
+
+</html>
